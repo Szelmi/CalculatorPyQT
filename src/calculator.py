@@ -4,7 +4,6 @@
 from PyQt5 import QtWidgets
 from ui_calculator import Ui_Calculator
 
-
 class CalculatorWindow(QtWidgets.QMainWindow, Ui_Calculator):
     firstNum = None
     userIsTypingSecondNumber = False
@@ -15,6 +14,8 @@ class CalculatorWindow(QtWidgets.QMainWindow, Ui_Calculator):
         super().__init__()
         self.setupUi(self)
         self.show()
+
+
 
         self.pushButton_0.clicked.connect(self.digit_pressed)
         self.pushButton_1.clicked.connect(self.digit_pressed)
